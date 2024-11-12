@@ -1,0 +1,210 @@
+/* Fonte importada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Background */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 7, 172) 100%);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Fundo animado */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 7, 172) 100%);
+    clip-path: circle(50% at 50% 50%);
+    animation: expandBackground 4s ease-out forwards;
+    z-index: -1;
+}
+
+/* Container inicial */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideIn 1.5s ease-out;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    animation: fadeIn 2s ease-out;
+}
+
+.logo {
+    width: 450px;
+    margin-top: 20px;
+    animation: bounceIn 2s ease-in-out;
+}
+
+/* Seção "Sobre nós" */
+.sobre {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tituloSobre {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.texto {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Div início centralizada */
+.incio {
+    padding: 50px 20px;
+}
+
+.inicio h2 {
+    margin-top: 50px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+
+.inicio a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.inicio button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(32, 18, 235);
+    font-size: 20px;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.inicio button:hover {
+    background-color: rgb(18, 10, 131);
+}
+
+
+/* Imagens */
+.imagens {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: #0d00c0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards;
+    color: #fff;
+}
+
+.box:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.box:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.box:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* Animações */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes expandBackground {
+    0% {
+        clip-path: circle(10% at 50% 50%);
+    }
+
+    100% {
+        clip-path: circle(150% at 50% 50%);
+    }
+}
+
+/* Animação de opacidade e subida */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

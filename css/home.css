@@ -1,0 +1,149 @@
+/* Fonte importada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos globais */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000080;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Menu superior */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(10, 7, 172);
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Banner de introdução */
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 7, 172) 100%);
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideIn 1.5s ease-out;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Seção de pacotes */
+.pacotes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pacotes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.pacote-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pacote {
+    background-color: #0d00c0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.pacote:hover {
+    transform: translateY(-10px);
+}
+
+.pacote img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.pacote h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.pacote p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.btn-detalhes {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgb(32, 18, 235);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-detalhes:hover {
+    background-color: rgb(18, 10, 131);
+}
+
+/* Animações */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
