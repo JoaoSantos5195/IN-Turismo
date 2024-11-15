@@ -50,13 +50,14 @@ html {
 }
 
 .banner h1 {
-    font-size: 3rem;
+    font-size: 4vw;
+    /* Adapta o tamanho ao viewport */
     margin: 0;
     animation: slideIn 1.5s ease-out;
 }
 
 .banner p {
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     margin-top: 10px;
     animation: fadeIn 2s ease-out;
 }
@@ -68,7 +69,8 @@ html {
 }
 
 .pacotes h2 {
-    font-size: 2.5rem;
+    font-size: 2.5vw;
+    /* Responsivo */
     margin-bottom: 20px;
 }
 
@@ -76,16 +78,22 @@ html {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
+    /* Permite adaptação para telas menores */
 }
 
 .pacote {
     background-color: #0d00c0;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 30%;
+    min-width: 300px;
+    /* Garante legibilidade em telas pequenas */
+    max-width: 400px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    margin: 20px 10px;
 }
 
 .pacote:hover {
@@ -99,7 +107,7 @@ html {
 }
 
 .pacote h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #ffffff;
     margin: 10px 0;
 }
@@ -145,5 +153,61 @@ html {
 
     to {
         opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 6vw;
+    }
+
+    .banner p {
+        font-size: 4vw;
+    }
+
+    .pacotes h2 {
+        font-size: 5vw;
+    }
+
+    .pacote {
+        width: 90%;
+    }
+
+    .pacote h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    .pacotes h2 {
+        font-size: 3rem;
+    }
+
+    .pacote-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .pacote {
+        width: 25%;
     }
 }
