@@ -12,34 +12,60 @@ html {
     overflow-x: hidden;
 }
 
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgb(1, 0, 68);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #e0e0e0;
+}
+
+.side-menu .close-btn {
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
 /* Menu superior */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Garante que logo e botão fiquem nas extremidades */
     align-items: center;
     padding: 20px 50px;
-    background-color: rgb(10, 7, 172);
+    background-color: rgb(1, 0, 68);
 }
 
 .navbar .logo img {
-    height: 50px;
+    width: 40%;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+/* Responsividade para o botão de menu */
+#menu-btn {
+    display: block;
+    cursor: pointer;
 }
 
-.navbar ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #e0e0e0;
+#menu-btn img {
+    height: 30px;
 }
 
 /* Banner de introdução */
@@ -51,7 +77,6 @@ html {
 
 .banner h1 {
     font-size: 4vw;
-    /* Adapta o tamanho ao viewport */
     margin: 0;
     animation: slideIn 1.5s ease-out;
 }
@@ -70,7 +95,6 @@ html {
 
 .pacotes h2 {
     font-size: 2.5vw;
-    /* Responsivo */
     margin-bottom: 20px;
 }
 
@@ -79,7 +103,6 @@ html {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    /* Permite adaptação para telas menores */
 }
 
 .pacote {
@@ -88,7 +111,6 @@ html {
     padding: 20px;
     width: 30%;
     min-width: 300px;
-    /* Garante legibilidade em telas pequenas */
     max-width: 400px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -159,7 +181,8 @@ html {
 /* Media Queries */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row; /* Alinha logo e botão na mesma linha */
+        justify-content: space-between; /* Garante que fiquem nas extremidades */
         padding: 20px;
     }
 
@@ -209,5 +232,9 @@ html {
 
     .pacote {
         width: 25%;
+    }
+
+    .navbar .logo img {
+        width: 20%;
     }
 }
