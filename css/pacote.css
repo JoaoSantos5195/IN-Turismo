@@ -17,18 +17,17 @@ html {
 
 
 
-/* Menu superior */
 .navbar {
     display: flex;
     justify-content: space-between;
+    /* Garante que logo e botão fiquem nas extremidades */
     align-items: center;
-    padding: 10px 30px;
-    background-color: #010044;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px 50px;
+    background-color: rgb(1, 0, 68);
 }
 
 .navbar .logo img {
-    max-width: 150px;
+    width: 20%;
 }
 
 .side-menu {
@@ -134,7 +133,8 @@ ul li {
 h1 {
     font-size: 3.4vw;
 }
-p{
+
+p {
     font-size: 1.4rem;
 }
 
