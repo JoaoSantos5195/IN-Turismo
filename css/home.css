@@ -6,9 +6,16 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #000080;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 7, 172) 100%);
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Garante que ocupe toda a altura da tela */
     overflow-x: hidden;
 }
 
@@ -42,9 +49,8 @@ html {
 
 .side-menu .close-btn {
     top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-top: 0;
 }
 
 
@@ -65,6 +71,8 @@ html {
 }
 
 /* Menu superior */
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -75,14 +83,14 @@ html {
 }
 
 .navbar .logo img {
-    width: 40%;
+    width: 20%;
 }
 
 /* Banner de introdução */
 .banner {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 7, 172) 100%);
+    background: linear-gradient(180deg, rgb(14, 0, 0) 0%, rgb(10, 7, 172) 100%);
 }
 
 .banner h1 {
@@ -148,13 +156,15 @@ html {
     font-size: 1rem;
     color: #e0e0e0;
 }
-#luxo{
+
+#luxo {
     border: solid 3px goldenrod;
 }
+
 .btn-detalhes {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 20px 30px;
     color: #ffffff;
     background-color: rgb(32, 18, 235);
     border-radius: 8px;

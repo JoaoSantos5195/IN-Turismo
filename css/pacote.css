@@ -1,17 +1,20 @@
-/* Estilos globais */
 body,
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #000080, #001a66);
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(6, 8, 141) 100%);
     color: #ffffff;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100%;
-
+    min-height: 100vh;
+    /* Garante que ocupe toda a altura da tela */
+    overflow-x: hidden;
 }
+
 
 
 /* Menu superior */
@@ -130,6 +133,9 @@ ul li {
 
 h1 {
     font-size: 3.4vw;
+}
+p{
+    font-size: 1.4rem;
 }
 
 /* Botão de compra */
