@@ -216,6 +216,10 @@ html {
         align-items: center;
     }
 
+    .navbar .logo img {
+        width: 20%;
+    }
+
     .banner h1 {
         font-size: 6vw;
     }

@@ -172,4 +172,8 @@ button:hover {
     .info {
         width: 80%;
     }
+
+    .navbar .logo img {
+        width: 20%;
+    }
 }
