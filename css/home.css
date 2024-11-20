@@ -131,9 +131,10 @@ html {
     min-width: 300px;
     max-width: 400px;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(1, 32, 46, 0.822);
     transition: transform 0.3s ease;
     margin: 20px 10px;
+    
 }
 
 .pacote:hover {
@@ -158,7 +159,7 @@ html {
 }
 
 #luxo {
-    border: solid 3px goldenrod;
+    border: solid 3.5px goldenrod;
 }
 
 .btn-detalhes {

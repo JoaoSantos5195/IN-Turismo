@@ -1,0 +1,143 @@
+/* Estilos globais */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(10, 7, 172) 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #010044;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+.side-menu a:hover {
+    color: #9a66fa;
+}
+
+.side-menu .close-btn {
+    top: 0;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+#menu-btn {
+    display: block;
+    cursor: pointer;
+}
+
+#menu-btn img {
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#menu-btn img:hover {
+    transform: rotate(90deg);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(1, 0, 68);
+}
+
+.navbar .logo img {
+    width: 20%;
+}
+
+.contatos {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Ajustando a exibição dos cards */
+.pessoas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 40px); /* 2 por linha com espaçamento */
+    max-width: calc(50% - 40px); /* Limita a largura máxima para 50% */
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.card p {
+    margin: 5px 0 0;
+}
+
+.dev{
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos do desenvolvedor */
+.dev {
+    margin: 5%;
+    text-align: center;
+}
+
+.dev h2 {
+    font-size: 1.5rem;
+}
+
+.dev p {
+    font-size: 1.3rem;
+}
+
+/* Ajustes para o layout no celular */
+@media (max-width: 768px) {
+
+    .card {
+        flex: 1 1 100%; /* Um card por linha em telas menores */
+        max-width: 100%; /* Garantir que ocupe 100% da largura disponível */
+        font-size: 1.5rem;
+    }
+    .card h2{
+        font-size: 2rem;
+    }
+    .navbar .logo img {
+        width: 20%;
+    }
+}

@@ -205,6 +205,10 @@ h1 {
         font-size: 3rem;
     }
 
+    h2{
+        font-size: 3rem;
+    }
+
     .slogan {
         font-size: 1.5rem;
     }
@@ -226,7 +230,7 @@ h1 {
     }
 
     .texto {
-        font-size: 1rem;
+        font-size: 1.2rem;
         max-width: 70%;
     }
 
@@ -236,7 +240,7 @@ h1 {
     }
 
     .box {
-        width: 20%;
+        width: 23%;
         margin: 0;
         font-size: 1rem;
     }
