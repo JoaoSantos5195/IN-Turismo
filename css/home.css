@@ -240,30 +240,3 @@ html {
         font-size: 1.5rem;
     }
 }
-
-@media (min-width: 1024px) {
-    .banner h1 {
-        font-size: 2.5rem;
-    }
-
-    .banner p {
-        font-size: 1.2rem;
-    }
-
-    .pacotes h2 {
-        font-size: 3rem;
-    }
-
-    .pacote-container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .pacote {
-        width: 25%;
-    }
-
-    .navbar .logo img {
-        width: 20%;
-    }
-}

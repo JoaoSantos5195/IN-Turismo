@@ -37,6 +37,8 @@ html {
 
 .side-menu a:hover {
     color: #9a66fa;
+    transition: background 0.3s, color 0.3s;
+
 }
 
 .side-menu .close-btn {
@@ -45,6 +47,8 @@ html {
     margin-top: 0;
 }
 
+
+/* Responsividade para o botão de menu */
 #menu-btn {
     display: block;
     cursor: pointer;
@@ -60,9 +64,13 @@ html {
     transform: rotate(90deg);
 }
 
+/* Menu superior */
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
+    /* Garante que logo e botão fiquem nas extremidades */
     align-items: center;
     padding: 20px 50px;
     background-color: rgb(1, 0, 68);
@@ -93,8 +101,10 @@ html {
     margin: 10px;
     text-align: center;
     box-sizing: border-box;
-    flex: 1 1 calc(50% - 40px); /* 2 por linha com espaçamento */
-    max-width: calc(50% - 40px); /* Limita a largura máxima para 50% */
+    flex: 1 1 calc(50% - 40px);
+    /* 2 por linha com espaçamento */
+    max-width: calc(50% - 40px);
+    /* Limita a largura máxima para 50% */
 }
 
 .card h2 {
@@ -107,7 +117,7 @@ html {
     margin: 5px 0 0;
 }
 
-.dev{
+.dev {
     width: 100%;
     text-align: center;
 }
@@ -130,14 +140,36 @@ html {
 @media (max-width: 768px) {
 
     .card {
-        flex: 1 1 100%; /* Um card por linha em telas menores */
-        max-width: 100%; /* Garantir que ocupe 100% da largura disponível */
+        flex: 1 1 100%;
+        /* Um card por linha em telas menores */
+        max-width: 100%;
+        /* Garantir que ocupe 100% da largura disponível */
         font-size: 1.5rem;
     }
-    .card h2{
+
+    .card h2 {
         font-size: 2rem;
     }
+
     .navbar .logo img {
         width: 20%;
     }
+
+    .navbar {
+        flex-direction: row;
+        /* Alinha logo e botão na mesma linha */
+        justify-content: space-between;
+        /* Garante que fiquem nas extremidades */
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        width: 20%;
+    }
+
 }

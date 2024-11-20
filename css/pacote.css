@@ -16,20 +16,6 @@ html {
 }
 
 
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    /* Garante que logo e botão fiquem nas extremidades */
-    align-items: center;
-    padding: 20px 50px;
-    background-color: rgb(1, 0, 68);
-}
-
-.navbar .logo img {
-    width: 20%;
-}
-
 .side-menu {
     height: 100%;
     width: 0;
@@ -60,9 +46,8 @@ html {
 
 .side-menu .close-btn {
     top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-top: 0;
 }
 
 
@@ -81,6 +66,23 @@ html {
 #menu-btn img:hover {
     transform: rotate(90deg);
 }
+
+/* Menu superior */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Garante que logo e botão fiquem nas extremidades */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(1, 0, 68);
+}
+
+.navbar .logo img {
+    width: 20%;
+}
+
 
 .main-container {
     flex: 1;
@@ -173,7 +175,21 @@ button:hover {
         width: 80%;
     }
 
+    .navbar {
+        flex-direction: row;
+        /* Alinha logo e botão na mesma linha */
+        justify-content: space-between;
+        /* Garante que fiquem nas extremidades */
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar .logo img {
         width: 20%;
     }
+
 }
