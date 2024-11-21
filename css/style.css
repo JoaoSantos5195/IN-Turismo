@@ -40,20 +40,20 @@ html {
 
 /* Estilos principais */
 h1 {
-    font-size: 6vw;
+    font-size: 8vw;
     margin: 0;
     animation: slideIn 1.5s ease-out;
 }
 
 .slogan {
-    font-size: 4vw;
-    margin-top: 2.5%;
+    font-size: 6vw;
+    margin-top: 3%;
     animation: fadeIn 2s ease-out;
 }
 
 .logo {
     width: 100%;
-    max-width: 450px;
+    max-width: 490px;
     margin-top: 5%;
     animation: bounceIn 2s ease-in-out;
 }
