@@ -115,6 +115,7 @@ html {
 
 .card p {
     margin: 5px 0 0;
+    font-size: 1rem;
 }
 
 .dev {
@@ -129,11 +130,11 @@ html {
 }
 
 .dev h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .dev p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 /* Ajustes para o layout no celular */
