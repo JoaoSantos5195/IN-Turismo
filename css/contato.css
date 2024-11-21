@@ -150,6 +150,9 @@ html {
     .card h2 {
         font-size: 2rem;
     }
+    .card p{
+        font-size: 1.2rem;
+    }
 
     .navbar .logo img {
         width: 30%;
